@@ -12,7 +12,7 @@ c = socket.socket(socket.AF_INET,socket.SOCK_STREAM) #criando socket IPV4 TCP
 c.connect((host,port))
 #após conectar deve enviar dados para o servidor
 msg=' '
-while msg !='\x18':
+while msg !='exit':
     msg = input()
     msg2 = str.encode(msg)
     #após conectar deve enviar dados para o servidor
