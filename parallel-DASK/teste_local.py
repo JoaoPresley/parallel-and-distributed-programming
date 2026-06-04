@@ -2,7 +2,6 @@ import os
 import time
 from dask.distributed import Client, LocalCluster
 
-
 # Função que será distribuída (Nó de Processamento)
 def calcular_potencia(base, expoente):
     # Identifica o processo para provar a distribuição
