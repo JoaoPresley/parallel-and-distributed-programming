@@ -11,14 +11,6 @@ import time
 from dask.distributed import Client, LocalCluster
 
 # Função que será distribuída (Nó de Processamento)
-def calcular_potencia(base, expoente):
-    # Identifica o processo para provar a distribuição
-    pid = os.getpid()
-    print(f"Processando {base}^{expoente} no PID: {pid}")
-
-    time.sleep(1)  # Simula uma tarefa demorada
-    return (base ** expoente, pid)
-
 def contar_letras(palavra):
     return (palavra, len(palavra), os.getpid())
 
